@@ -55,8 +55,20 @@ h3, h2 {
     @include text(18px);
 
     @media (max-width: 768px) {
-        @include text(15px);
+        @include text(15px);        
+        
     }
+    
+}
+
+.flux-capacitor{
+    
+    margin-left: 30px;
+}
+
+.text--big--note{
+    //background-color: red;
+    margin-top: 45px;
 }
 
 .text {
@@ -111,7 +123,7 @@ h3, h2 {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 60px;
+    height: 50px;
     font-size: 18px;
     color: variaveis.$corTextoSecundario;
     background-color: variaveis.$corDeFundoBotaoPrimario;
@@ -150,8 +162,8 @@ h3, h2 {
 
 .image-text-section {
     padding: 5.6vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display:flex;
+    //grid-template-columns: 1fr 1fr;
     align-items: center;
     
     @media (max-width: 768px) {
@@ -159,7 +171,9 @@ h3, h2 {
     }
     
     img {
-        max-width: 100%;
+        max-width: 30%;
+        border: 5px  solid white;
+        border-radius: 10px;
     }
 
     &__text_container {

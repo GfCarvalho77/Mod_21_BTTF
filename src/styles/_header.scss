@@ -12,7 +12,7 @@
         background-color: transparent;
 
         .header {
-            &__logo, &__links__item:first-child {
+            &__logo, &__lightning, &__links__item:first-child {
                 opacity: 0;
                 visibility: hidden;
             }

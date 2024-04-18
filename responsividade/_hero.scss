@@ -1,0 +1,108 @@
+@use 'variaveis';
+
+.hero{
+   padding: 5.6vw;
+    min-height: 80vh;
+    background-image: url(../images/hero_desktop\ -\ Copia.jpeg);
+    text-align: center;
+    background-size: cover;
+
+    @media (max-width: 768px) {
+     background-image: url(../images/hero_tablet_bttf.jpg);
+     padding-top: calc(50vw + 25px);
+     background-size: contain;
+     background-repeat: no-repeat;
+     margin-top: -55px;
+
+
+     @media (max-width: 768px) {
+      
+      .delorean_flames {      
+      margin-top: 100px;
+      margin-left: -150px;
+     }
+     }
+     
+     
+     @media (max-width: 376px) {
+     
+      .delorean_flames {
+      
+         margin-top: 100px;
+         margin-left: -50px;
+
+        }
+
+  }
+
+    .button {
+      margin-top: 2vw;
+      margin-bottom: 8px;
+    }
+
+   &__content{
+      max-width: 640px;      
+
+      &__branding{
+         //max-width: 320px;
+         margin: 0 auto 20px;
+
+         img{
+            max-width: 500px;
+            border: 5px  solid white;
+            border-radius: 10px;
+            margin: 0 auto 0px;
+            display: inline;           
+            
+         }
+         
+         @media (max-width: 768px) {
+            max-width: 180px;
+        }
+
+        @media (max-width: 376px) {
+         img {
+            max-width: 300px;
+            margin: 0;
+         }         
+        }
+      }
+
+      .title--small{
+         margin-bottom:80px;
+      }
+      p{
+         margin-bottom: 40px;
+
+         &:last-child {
+            margin-top: 60px;         }
+      }
+      &__combos{
+         display: flex;
+         justify-content: space-between;
+
+         @media (max-width: 768px) {
+            display: block;
+        }
+         
+         &__combo{
+            width: calc(250% - 5px);
+
+            @media (max-width: 768px) {
+               width: 100%;
+               margin-bottom: 24px;
+           }
+            
+            img{
+               max-height: 300px;
+               border: 5px  solid white;
+               border-radius: 10px;
+            }
+
+         }
+
+      }
+
+   }
+}
+}
